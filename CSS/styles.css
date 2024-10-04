@@ -8,7 +8,7 @@ body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
   background-color: #110c0c;
-  color: #fff; /* Білий текст за замовчуванням */
+  color: #fff;
 }
 
 .container {
@@ -35,13 +35,13 @@ body {
 .logo-img {
   width: 50px;
   height: auto;
-  margin-right: 10px; /* Відступ між зображенням логотипа та текстом */
+  margin-right: 10px; 
 }
 
 .header .nav ul {
   list-style: none;
   display: flex;
-  gap: 20px; /* Відступи між пунктами меню */
+  gap: 20px; 
 }
 
 .header .nav ul li a {
@@ -58,10 +58,10 @@ body {
 .logo-img {
   width: 50px;
   height: auto;
-  margin-right: 10px; /* Відступ між зображенням логотипа і текстом */
+  margin-right: 10px;
 }
 
-/* Об'єднана секція для фонового зображення */
+
 .hero-movies-wrapper {
   background: url("../img/cinema-header-1.jpg") no-repeat center center/cover;
   padding-top: 50px;
@@ -82,12 +82,12 @@ body {
 
 .hero h2 {
   font-size: 3rem;
-  margin-bottom: 10px; /* Відступ від заголовка до тексту */
+  margin-bottom: 10px; 
 }
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 20px; /* Відступ між текстом та кнопкою */
+  margin-bottom: 20px; 
 }
 
 .hero .btn {
@@ -98,7 +98,7 @@ body {
   font-size: 1.2rem;
   border-radius: 5px;
   position: relative;
-  margin-top: 20px; /* Відступ зверху, щоб кнопка була нижче */
+  margin-top: 20px; 
 }
 
 .hero .btn:hover {
@@ -138,25 +138,25 @@ body {
   color: #ffffff;
 }
 
-/* Анімація потім прибрати коментарі */
+
 
 .scale-up {
-  transition: transform 0.3s ease; /* Плавний перехід */
+  transition: transform 0.3s ease; 
 }
 
 .scale-up:hover {
-  transform: scale(1.1); /* Збільшення на 10% */
+  transform: scale(1.1); 
 }
 
 .move-up {
   position: relative;
-  transition: top 0.3s ease; /* Плавний перехід для зміщення */
+  transition: top 0.3s ease; 
 }
 
 .move-up:hover {
-  top: -20px; /* Зміщення на 20 пікселів вгору при наведенні */
+  top: -20px; 
 }
-/* Анімація end */
+
 
 .footer {
   background: #333;
@@ -164,8 +164,6 @@ body {
   text-align: center;
   padding: 10px 0;
 }
-
-/*# sourceMappingURL=styles.css.map */
 
 /* Footer */
 .footer {
