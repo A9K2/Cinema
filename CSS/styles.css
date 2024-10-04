@@ -8,6 +8,7 @@ body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
   background-color: #110c0c;
+  color: #fff; /* Білий текст за замовчуванням */
 }
 
 .container {
@@ -16,40 +17,59 @@ body {
 }
 
 .header {
-  background: #ff5733;
+  background: #000000;
   color: white;
   padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.header .logo {                       
-  float: left;
+
+.header .logo {
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
+
 .logo-img {
-  width: 50px; 
-  height: auto; 
+  width: 50px;
+  height: auto;
+  margin-right: 10px; /* Відступ між зображенням логотипа та текстом */
 }
+
 .header .nav ul {
   list-style: none;
-  float: right;
+  display: flex;
+  gap: 20px; /* Відступи між пунктами меню */
 }
-.header .nav ul li {
-  display: inline;
-  margin-left: 20px;
-}
+
 .header .nav ul li a {
   color: white;
   text-decoration: none;
+  font-size: 1.1rem;
 }
+
 .header .nav ul li a:hover {
   text-decoration: underline;
 }
-.header:after {
-  content: "";
-  display: block;
-  clear: both;
+
+
+.logo-img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px; /* Відступ між зображенням логотипа і текстом */
 }
 
-.hero {
+/* Об'єднана секція для фонового зображення */
+.hero-movies-wrapper {
   background: url("../img/cinema-header-1.jpg") no-repeat center center/cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Hero */
+.hero {
   color: rgb(255, 255, 255);
   height: 400px;
   text-align: center;
@@ -57,10 +77,19 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
+
 .hero h2 {
   font-size: 3rem;
+  margin-bottom: 10px; /* Відступ від заголовка до тексту */
 }
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px; /* Відступ між текстом та кнопкою */
+}
+
 .hero .btn {
   background: #ff5733;
   color: white;
@@ -68,36 +97,47 @@ body {
   text-decoration: none;
   font-size: 1.2rem;
   border-radius: 5px;
+  position: relative;
+  margin-top: 20px; /* Відступ зверху, щоб кнопка була нижче */
 }
+
 .hero .btn:hover {
   background: #ff2d00;
 }
 
+
+/* Movies */
 .movies {
   padding: 20px 0;
-}
-.movies h2 {
   text-align: center;
+}
+
+.movies h2 {
   color: #ffffff;
   position: relative;
-  top: -20px; /* Зміщує заголовок на 20 пікселів вгору */
+  top: -20px;
 }
 
 .movies .movie-list {
   display: flex;
   justify-content: space-between;
+  padding: 0 10%;
 }
-.movies .movie-list .movie-item {
+
+.movies .movie-item {
   text-align: center;
 }
-.movies .movie-list .movie-item img {
+
+.movies .movie-item img {
   width: 100%;
   max-width: 200px;
 }
-.movies .movie-list .movie-item h3 {
+
+.movies .movie-item h3 {
   margin-top: 10px;
   color: #ffffff;
 }
+
 /* Анімація потім прибрати коментарі */
 
 .scale-up {
@@ -126,3 +166,11 @@ body {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
